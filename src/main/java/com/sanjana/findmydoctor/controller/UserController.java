@@ -49,5 +49,8 @@ public class UserController {
 	public byte[] getPhoto(@PathVariable String email) {
 		return userService.getPhoto(email);
 	}
-	
+	@GetMapping("/")
+	public String homee() {
+		return "Hello Test";
+	}
 }
